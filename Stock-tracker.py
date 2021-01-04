@@ -16,7 +16,7 @@ def StockTracker():
     
     #Just switch out the URL with yours here
 
-    url = input("Enter the yahoo finance URL of the stock you are looking for: ")
+    url = #Enter your yahoo finance url
 
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'lxml')
@@ -26,4 +26,4 @@ def StockTracker():
     return(price)
 
 while True:
-    print('Current Price of your stock is: ' +StockTracker())
+    print('Current Price of your stock is: ' +StockTracker(), end='\r')
